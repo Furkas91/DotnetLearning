@@ -6,7 +6,24 @@ namespace List
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            LinkedList<string> mylist = new LinkedList<string>();
+
+            for (int i = 0; i < 5; i++)
+            {
+                mylist.Add(Console.ReadLine());
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(mylist.Get(i));
+            }
+            mylist.Reverse();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(mylist.Get(i));
+            }
+
+            Console.ReadKey();
         }
     }
 }
